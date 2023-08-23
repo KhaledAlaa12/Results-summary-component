@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+ul {
+  list-style: none;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 400px;
+  width: 600px;
+  margin-top: 200px;
+  border-radius: 25px;
+}
+
+.container > div:first-child {
+  background-image: linear-gradient(#6642fe, #4936f2, #332ceb);
+  color: white;
+  padding: 35px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+.container > div:first-child > div:first-child {
+  text-align: center;
+  font-size: 18px;
+}
+.container > div:first-child .circle {
+  margin: 35px auto;
+  /* background-color: #4a24cf; */
+  background-image: linear-gradient(#4a24cf, #4936f2);
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container > div:first-child .circle span:first-child {
+  font-size: 50px;
+  font-weight: bold;
+}
+.container > div:first-child .circle span:last-child {
+  color: #a5a3ff;
+}
+.container > div:first-child .details {
+  text-align: center;
+}
+.container > div:first-child .details span {
+  font-size: 25px;
+}
+.container > div:first-child .details p {
+  color: #a5a3ff;
+  font-size: 16px;
+}
+.container > div:nth-child(2) {
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+}
+.container > div:nth-child(2) h4 {
+  font-size: 18px;
+  margin-bottom: 35px;
+}
+.container > div:nth-child(2) ul li {
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container > div:nth-child(2) ul li div:first-child {
+  display: flex;
+  align-items: center;
+}
+.container > div:nth-child(2) ul li div:first-child img {
+  margin-right: 15px;
+}
+.container > div:nth-child(2) ul li:first-child {
+  color: #d77c85;
+}
+.container > div:nth-child(2) ul li:nth-child(2) {
+  color: #edb640;
+}
+.container > div:nth-child(2) ul li:nth-child(3) {
+  color: #81bfb0;
+}
+.container > div:nth-child(2) ul li:last-child {
+  color: #374294;
+}
+.container > div:nth-child(2) ul li div:last-child span {
+    font-weight: bold;
+    color: hsl(224, 30%, 27%);
+}
+.container > div:nth-child(2) button {
+  padding: 15px;
+  border: none;
+  border-radius: 20px;
+  background-color: hsl(224, 30%, 27%);
+  color: white;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  cursor: pointer;
+}
+.container > div:nth-child(2) button:hover {
+    background-color: #4c37f4;
+}
